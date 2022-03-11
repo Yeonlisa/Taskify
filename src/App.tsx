@@ -2,19 +2,23 @@ import React from 'react';
 import './App.css';
 
 let name: string;
-let age: number;
+let age: number | string;
 let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
 
-type Person = {
-  name: string;
-  age?: number;
-};
+let printName: (name: string) => void;
 
-let person: Person = {
-  name: 'Lisa',
-};
+// type Person = {
+//   name: string;
+//   age?: number;
+// };
+
+// let person: Person = {
+//   name: 'Lisa',
+// };
+
+// let lotsOfPeople: Person[];
 
 function App() {
   return (
