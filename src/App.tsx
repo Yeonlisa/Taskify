@@ -7,7 +7,15 @@ let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
 
-role = [5, "5"];
+type Person = {
+  name: string;
+  age: number;
+}
+
+let person: Person = {
+  name: 'Lisa',
+  age: 32,
+}
 
 function App() {
   return (
