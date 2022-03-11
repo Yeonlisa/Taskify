@@ -9,12 +9,18 @@ const App: React.FC = () => {
 
   const handleAdd = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if(todo) {
+      setTodos([...todos, { id: Date.now(), todo: todo, isDone: false }])
+      setTodo("");
+    }
   }
 
   return (
     <div className="App">
       <span className="heading">Taskify</span>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
+      {/* <TodoList /> */}
     </div>
   );
 }
