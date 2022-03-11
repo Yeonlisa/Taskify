@@ -68,10 +68,7 @@ const SingleTodo: React.FC<{
             >
                 <AiFillDelete />
             </span>
-            <span 
-                className="icon" 
-                onClick={() => handleDone(todo.id)}
-            >
+            <span className="icon" onClick={() => handleDone(todo.id)}>
                 <MdDone />
             </span>
         </div>
