@@ -7,7 +7,7 @@ let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
 
-let printName: (name: string) => void;
+let printName: (name: string) => never;
 
 // type Person = {
 //   name: string;
@@ -19,6 +19,13 @@ let printName: (name: string) => void;
 // };
 
 // let lotsOfPeople: Person[];
+
+// let personName: unknown;
+
+interface Person {
+  name: string;
+  age?: number;
+};
 
 function App() {
   return (
