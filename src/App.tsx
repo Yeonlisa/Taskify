@@ -9,13 +9,12 @@ let role: [number, string];
 
 type Person = {
   name: string;
-  age: number;
-}
+  age?: number;
+};
 
 let person: Person = {
   name: 'Lisa',
-  age: 32,
-}
+};
 
 function App() {
   return (
