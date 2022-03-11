@@ -52,8 +52,7 @@ const SingleTodo: React.FC<{
                 <span className="todos__single--text">{todo.todo}</span>
             )}
         <div>
-            <span 
-                className="icon"
+            <span className="icon"
                 onClick={() => {
                     if (!edit && !todo.isDone) {
                         setEdit(!edit);
