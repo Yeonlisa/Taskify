@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-let name: string;
+let name: any;
 let age: number | string;
 let isStudent: boolean;
 let hobbies: string[];
